@@ -46,15 +46,29 @@ function App() {
   }
 
   return(
-    <>
-    <h1>TODO</h1>
-      <input ref={todoNameRef} type="text" />
-      <button onClick={handleAddTodo}>Add New</button>
-      <button onClick={handleClearTodos}>Clear Completed</button>
-      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
-      <div>{todos.filter(todo => !todo.complete).length} left to do</div>
+    <div className="container">
+      <div className="header">
+        <h1>TODO</h1>
+        <button>toggle</button>
+      </div>
+
+      <div>
+        <input ref={todoNameRef} type="text" />
+        <button onClick={handleAddTodo}>Add New</button>
+      </div>
+
+      <div>
+        <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
+        <div>{todos.filter(todo => !todo.complete).length} left to do</div>
+        <div>
+          <p>All</p>
+          <p>Active</p>
+          <p>Completed</p>
+        </div>
+        <button onClick={handleClearTodos}>Clear Completed</button>
+      </div>
       <p>Drag and drop to reorder list</p>
-    </>
+    </div>
   );
 }
 
