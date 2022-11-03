@@ -12,6 +12,7 @@
   width: 40%;
   min-width: 350px;
   max-width: 1000px;
+  
 }
 
 .header{
@@ -24,4 +25,18 @@
   font-size: 3rem;
   color:white;
   letter-spacing: 1rem;
+}
+
+
+.header__image {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 300px;
+  width: 100%;
+  z-index: -1;
+  background-color: var(--background-main);
+  background-image: var(--header-image);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -1,13 +1,20 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, createContext } from 'react';
 import './App.css';
 import TodoList from './TodoList';
+import Toggle from './Toggle';
 import { v4 as uuidv4 } from 'uuid';
+import { keepTheme } from './themes';
 
 const LOCAL_STORAGE_KEY = 'todoApp.todos'
 
 function App() {
   const [todos, setTodos] = useState([ ]);
   const todoNameRef = useRef();
+
+  useEffect(() => {
+    keepTheme()
+  })
+
 // localStorage.clear()
 
   useEffect (() => {
@@ -47,9 +54,10 @@ function App() {
 
   return(
     <div className="container">
+      <div className="header__image"></div>
       <div className="header">
         <h1>TODO</h1>
-        <button>toggle</button>
+        <Toggle />
       </div>
 
       <div>
