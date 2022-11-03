@@ -9,12 +9,12 @@ export default function Todo({ todo, toggleTodo, deleteTodo }) {
         deleteTodo(todo.id);
     }
   return (
-    <div>
+    <div className="todoList__todo">
         <label>
             <input type="checkbox" checked={todo.complete} onChange={handleTodoClick}/>
             {todo.name}
         </label>
-        <button onClick={handleTodoDelete}>D</button>
+        <div className="todoList__delete" onClick={handleTodoDelete}></div>
 
     </div>
   )

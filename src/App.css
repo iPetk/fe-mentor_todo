@@ -7,6 +7,10 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
+*:focus {
+  outline: none;
+}
+
 .container {
   margin: 0 auto;
   width: 40%;
@@ -16,7 +20,7 @@
 }
 
 .header{
-  margin: 4rem 0;
+  margin: 3rem 0;
   display: flex;
   justify-content: space-between;
 }
@@ -39,4 +43,57 @@
   background-image: var(--header-image);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.todoList__todo{
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: start;
+  border-bottom: 2px solid var(--border-color);
+
+}
+
+.todoList__delete{
+  margin-left: auto;
+  background-image: url('images/icon-cross.svg');
+  background-size: cover;
+  height: 1rem;
+  width: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+.todoList{
+  background-color: var(--background-content);
+  border-radius: 5px;
+  color: var(--text-color-active);
+}
+
+.todoList__input{
+  margin-bottom: 3rem;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: start;
+  
+}
+
+.todoList__input input{
+  background-color: var(--background-content);
+  color: var(--text-color-active);
+  border: 0;
+  width: 100%;
+}
+
+.toggleTheme{
+  margin-left: auto;
+  background-image: var(--button-icon);
+  background-size: cover;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  border: none;
 }

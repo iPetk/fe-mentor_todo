@@ -25,7 +25,7 @@ function Toggle() {
     }, [theme])
 
     return (
-        <button onClick={handleOnClick}>toggle</button>
+        <div className="toggleTheme" onClick={handleOnClick}></div>
     )
 }
 

@@ -17,8 +17,8 @@ body {
 
   --border-color:hsl(233, 11%, 84%);
 
-  --background-main:hsl(0, 0%, 98%);
-  --background-lighter:hsl(236, 33%, 92%);
+  --background-content:hsl(0, 0%, 98%);
+  --background-main:hsl(236, 33%, 92%);
 
 }
 
@@ -28,7 +28,7 @@ body {
   
   --text-color-selected:hsl(220, 98%, 61%);
 
-  --text-color-active:hsl(235, 19%, 35%);
+  --text-color-active:hsl(234, 39%, 85%);
   --text-color-hover:hsl(236, 33%, 92%);
 
   --text-color-inactive:hsl(234, 11%, 52%);
@@ -36,6 +36,6 @@ body {
   --border-color: hsl(237, 14%, 26%);
 
   --background-main:hsl(235, 21%, 11%);
-  --background-lighter:hsl(235, 24%, 19%);
+  --background-content:hsl(235, 24%, 19%);
 
 } 
